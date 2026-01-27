@@ -16,9 +16,11 @@ export default defineConfig({
         theme_color: '#0c92eb',
         background_color: '#ffffff',
         display: 'standalone',
+        background_color: "#ffffff",
+        start_url: "/family-expense-pwa/",
         icons: [
           {
-            src: '/icon.svg',
+            src: 'icon.svg',
             sizes: 'any',
             type: 'image/svg+xml',
             purpose: 'any'
@@ -27,4 +29,5 @@ export default defineConfig({
       }
     })
   ],
+  base: '/family-expense-pwa/',
 })
