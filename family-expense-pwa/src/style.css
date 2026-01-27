@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-900 antialiased;
+    background-color: theme('colors.surface.50');
+  }
+
+  ::selection {
+    background-color: theme('colors.brand.200');
+    color: theme('colors.brand.900');
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass rounded-3xl;
+    pointer-events: auto;
+  }
+
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-lg border-t border-slate-200/50;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg shadow-brand-200 hover:bg-brand-700 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2;
+  }
+
+  .input-field {
+    @apply w-full px-5 py-4 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-brand-500/50 transition-all outline-none text-slate-800 placeholder:text-slate-400;
+  }
+
+  .amount {
+    @apply font-mono tracking-tight tabular-nums;
+  }
+}
+
+/* Custom styles for date input */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Custom calendar picker indicator */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+  filter: invert(0.5);
+  padding: 4px;
+  border-radius: 0.25rem;
+}
+
+/* Firefox date input reset */
+input[type="date"]::-moz-calendar-picker-indicator {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Shadow top utility class for calculator keypad */
+.shadow-top {
+  box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.03), 0 -4px 6px -2px rgba(0, 0, 0, 0.01);
+}
+
+/* Safe areas for mobile PWA */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}

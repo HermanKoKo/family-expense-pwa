@@ -1,0 +1,32 @@
+{
+  "name": "family-expense-pwa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "idb-keyval": "^6.2.2",
+    "pinia": "^2.1.7",
+    "roughjs": "^4.6.6",
+    "vue": "^3.5.24",
+    "vue-rough-notation": "^1.0.4",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "autoprefixer": "^10.4.23",
+    "jsdom": "^27.4.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.2.4",
+    "vite-plugin-pwa": "^1.2.0",
+    "vitest": "^4.0.17"
+  }
+}
