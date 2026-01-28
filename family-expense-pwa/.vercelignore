@@ -1,0 +1,9 @@
+.git
+.gitignore
+README.md
+node_modules
+.env.local
+.env
+src/**/*.spec.js
+src/**/*.test.js
+__tests__
