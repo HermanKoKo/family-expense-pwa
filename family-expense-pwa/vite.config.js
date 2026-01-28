@@ -15,7 +15,7 @@ export default defineConfig({
       workbox: {
         skipWaiting: true
       },
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
+      includeAssets: ['icon.svg', 'manifest.webmanifest'],
       manifest: {
         name: 'FamilyExpense',
         short_name: 'FamilyExp',
