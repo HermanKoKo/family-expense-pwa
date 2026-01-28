@@ -7,7 +7,11 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
+      strategies: 'generateSW',
       registerType: 'autoUpdate',
+      devOptions: {
+        enabled: false
+      },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
       manifest: {
         name: 'FamilyExpense',
@@ -16,7 +20,6 @@ export default defineConfig({
         theme_color: '#0c92eb',
         background_color: '#ffffff',
         display: 'standalone',
-        background_color: "#ffffff",
         start_url: "/family-expense-pwa/",
         icons: [
           {
