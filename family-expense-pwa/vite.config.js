@@ -12,6 +12,9 @@ export default defineConfig({
       devOptions: {
         enabled: false
       },
+      workbox: {
+        skipWaiting: true
+      },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
       manifest: {
         name: 'FamilyExpense',
